@@ -1,0 +1,5 @@
+*.sol linguist-language=Solidity
+*.abi linguist-language=JSON
+
+# Foundry gas snapshots
+.gas-snapshot text eol=lf

@@ -1,0 +1,18 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+ffi = true
+ast = true
+build_info = true
+extra_output = ["storageLayout"]
+
+# Set a default Solc version.  You can override this in your own environment as needed.
+solc_version = "0.8.22"
+
+[profile.ci]
+fuzz = { runs = 5000 }
+invariant = { runs = 1000 }
+# Explicitly show test details
+verbosity = 2
